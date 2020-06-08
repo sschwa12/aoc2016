@@ -16,7 +16,6 @@ class Computer:
     def cpy(self):
         val, reg = self.xy
         val = self.registers.get(val, val)
-        # these all need to do get(registers, default=reg)
         self.registers[reg] = int(val)
         self.pc += 1
 
